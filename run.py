@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class Final(Secondary):
         def driver_wait(self):
             try:   # Explicit Wait is code you define to wait for a certain condition to occur before proceeding further in the code
@@ -21,6 +22,7 @@ class Final(Secondary):
             if self.teardown:
                 self.quit()
                 print("Exit")
+
 
 if __name__ == "__main__":
     with Final() as fin:
