@@ -51,7 +51,3 @@ class Secondary(Main):   # Using call parent method
                 "button[onclick='return total()']")
             btn.click()
             print("Sum button clicked")
-
-
-
-
