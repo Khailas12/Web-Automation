@@ -33,5 +33,6 @@ if __name__ == "__main__":
         fin.sum()
         fin.sum_button()
         fin.driver_wait()
+        fin.quit()
         
         print("Done")

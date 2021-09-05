@@ -11,6 +11,9 @@ class Main(webdriver.Chrome):
         self.path = path
         self.teardown = teardown
         os.environ["PATH"] += self.path
+        
+        opt = webdriver.ChromeOptions()
+        opt.add_experimental_option('excludeSwitches', ['enable-logging'])  # To stop showing -> "Passthrough is not supported, GL is disabled"
         super(Main, self).__init__()    # super() method lets you access methods in a parent class
 
     def first_page(self):
